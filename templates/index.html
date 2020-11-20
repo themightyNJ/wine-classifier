@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>Wine Classifier</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  
+</head>
+
+<body>
+ <div class="login">
+	<h1>Classify Wine</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}"method="post">
+        <input type="text" name="alcohol" placeholder="Alcohol" required="required" />
+        <input type="text" name="malic_acid" placeholder="Malic Acid" required="required" />
+        <input type="text" name="ash" placeholder="Ash" required="required" />
+        <input type="text" name="alcalinity_of_ash" placeholder="Alcalinity of Ash" required="required" />
+        <input type="text" name="magnesium" placeholder="Magnesium" required="required" />
+        <input type="text" name="total_phenols" placeholder="Total Phenols" required="required" />
+        <input type="text" name="flavanoids" placeholder="Flavanoids" required="required" />
+        <input type="text" name="nonflavanoid_phenols" placeholder="Nonflavanoid Phenols" required="required" />
+        <input type="text" name="proanthocyanins" placeholder="Proanthocyanins" required="required" />
+        <input type="text" name="colour_intensity" placeholder="Colour Intensity" required="required" />
+        <input type="text" name="hue" placeholder="Hue" required="required" />
+        <input type="text" name="diluted_wines" placeholder="OD280/OD315 of diluted wines" required="required" />
+        <input type="text" name="proline" placeholder="Proline" required="required" />
+        
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+   <br>
+   <br>
+   {{ prediction_text }}
+
+ </div>
+
+
+</body>
+</html>
