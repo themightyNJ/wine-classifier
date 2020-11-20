@@ -18,19 +18,19 @@
 
      <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('predict')}}"method="post">
-        <input type="text" name="alcohol" placeholder="Alcohol" required="required" />
-        <input type="text" name="malic_acid" placeholder="Malic Acid" required="required" />
-        <input type="text" name="ash" placeholder="Ash" required="required" />
-        <input type="text" name="alcalinity_of_ash" placeholder="Alcalinity of Ash" required="required" />
-        <input type="text" name="magnesium" placeholder="Magnesium" required="required" />
-        <input type="text" name="total_phenols" placeholder="Total Phenols" required="required" />
-        <input type="text" name="flavanoids" placeholder="Flavanoids" required="required" />
-        <input type="text" name="nonflavanoid_phenols" placeholder="Nonflavanoid Phenols" required="required" />
-        <input type="text" name="proanthocyanins" placeholder="Proanthocyanins" required="required" />
-        <input type="text" name="colour_intensity" placeholder="Colour Intensity" required="required" />
-        <input type="text" name="hue" placeholder="Hue" required="required" />
-        <input type="text" name="diluted_wines" placeholder="OD280/OD315 of diluted wines" required="required" />
-        <input type="text" name="proline" placeholder="Proline" required="required" />
+        <input type="text" name="alcohol" placeholder="Alcohol, value between 11.0-14.8" required="required" />
+        <input type="text" name="malic_acid" placeholder="Malic Acid, value between 0.74-5.80" required="required" />
+        <input type="text" name="ash" placeholder="Ash, value between 1.36-3.23" required="required" />
+        <input type="text" name="alcalinity_of_ash" placeholder="Alcalinity of Ash, value between 10.6-30.0" required="required" />
+        <input type="text" name="magnesium" placeholder="Magnesium, value between 70.0-162.0" required="required" />
+        <input type="text" name="total_phenols" placeholder="Total Phenols, value between 0.98-3.88" required="required" />
+        <input type="text" name="flavanoids" placeholder="Flavanoids, value between 0.34-5.08" required="required" />
+        <input type="text" name="nonflavanoid_phenols" placeholder="Nonflavanoid Phenols, value between 0.13-0.66" required="required" />
+        <input type="text" name="proanthocyanins" placeholder="Proanthocyanins, value between 0.41-3.58" required="required" />
+        <input type="text" name="colour_intensity" placeholder="Colour Intensity, value between 1.3-13.0" required="required" />
+        <input type="text" name="hue" placeholder="Hue, value between 0.48-1.71" required="required" />
+        <input type="text" name="diluted_wines" placeholder="OD280/OD315, value between 1.27-4.00" required="required" />
+        <input type="text" name="proline" placeholder="Proline, value between 278-1680" required="required" />
         
         <button type="submit" class="btn btn-primary btn-block btn-large">Classify</button>
     </form>
