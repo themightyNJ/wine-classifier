@@ -24,4 +24,4 @@ def predict():
     return render_template('index.html', prediction_text='Wine belongs to class: {}'.format(output_[output]))
 
 if __name__ == "__main__":
-    app.run(debug=False)
+    app.run()
