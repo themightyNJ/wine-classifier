@@ -1,4 +1,4 @@
-# Wine Classifier
+# Wine Classifier :wine_glass:
 *** 
 Try the app: [Wine Classifier](https://ml-wine-classifier.herokuapp.com/).
 
